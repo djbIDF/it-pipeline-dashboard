@@ -129,7 +129,7 @@ tbody td{padding:7px 12px;vertical-align:middle}
         <li>Go to <strong>portal.azure.com</strong> → App registrations</li>
         <li>Open your app → copy <strong>Client ID</strong> and <strong>Tenant ID</strong></li>
         <li>Open this file in Notepad and find the CONFIG block</li>
-        <li>Replace <code>YOUR_CLIENT_ID</code> and <code>YOUR_TENANT_ID</code></li>
+        <li>Replace <code>a66f4d6b-19fe-4d57-839c-50066e632c6d</code> and <code>2cd31e56-d6bb-4d5c-93d2-2f753fb9af56</code></li>
         <li>Save and reopen in your browser</li>
       </ol>
     </div>
@@ -282,7 +282,7 @@ const PRI_BADGE = {"Urgent":"s-hold","High":"s-ip","Medium":"s-rq","Low":"s-new"
 
 let msalInstance, DATA=[], filtered=[], sortKey='id', sortDir=1, lcChart=null;
 
-function isConfigured(){return CONFIG.clientId!=="YOUR_CLIENT_ID"&&CONFIG.tenantId!=="YOUR_TENANT_ID";}
+function isConfigured(){return CONFIG.clientId!=="a66f4d6b-19fe-4d57-839c-50066e632c6d"&&CONFIG.tenantId!=="2cd31e56-d6bb-4d5c-93d2-2f753fb9af56";}
 
 function show(id){
   ['setupScreen','loginScreen','loadingScreen','errorScreen','dashboard'].forEach(s=>{
